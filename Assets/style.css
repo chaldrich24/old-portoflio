@@ -44,8 +44,14 @@ header a {
     padding: 5px 15px;
 }
 
+section {
+    padding: 50px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .section-heading {
-    margin: 50px auto 10px auto;
     text-align: center;
     color: var(--secondary-color)
 }
@@ -54,15 +60,10 @@ header a {
     font-size: 35px;
 }
 
-.about-me {
-    margin: 10px 30px;
-}
-
 .about-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px auto;
     width: 75%;
 }
 
@@ -74,4 +75,42 @@ header a {
 .about-info img {
     width: 200px;
     height: 300px;
+    border: 5px solid var(--secondary-color);
+}  
+
+.projects {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-project {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+.main-project::before {
+    content: "";
+    background-image: url("./Images/run-buddy.png");
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+}
+
+.main-project h3 {
+    position: relative;
+}
+
+.project {
+    flex: 0 50%;
+    text-align: center;
 }
