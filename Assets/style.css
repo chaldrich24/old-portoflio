@@ -45,10 +45,11 @@ header a {
 }
 
 section {
-    padding: 50px 60px;
+    padding: 80px 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .section-heading {
@@ -85,43 +86,55 @@ section {
     border: 5px solid var(--secondary-color);
 }  
 
-.alt-section {
+.project-section {
     background-color: var(--secondary-color);
 }
 
 .projects {
-    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    width: 75%;
 }
 
 .main-project {
-    width: 100%;
-    height: 300px;
-    text-align: center;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    border: 5px solid var(--primary-color);
     position: relative;
 }
 
-.main-project::before {
-    content: "";
-    background-image: url("./Images/run-buddy.png");
-    background-size: cover;
-    position: absolute;
+.main-project img {
     width: 100%;
-    height: 100%;
-    opacity: 0.75;
+    height: auto;
+    opacity: .75;
 }
 
-.main-project h3 {
-    position: relative;
+.projects h3 {
+    display: inline-block;
+    position: absolute;
+    color: var(--primary-color);
+    left: 0;
 }
 
 .project {
     flex: 0 50%;
-    text-align: center;
+    border: 5px solid var(--primary-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100px;
+    height: 200px;
+    position: relative;
 }
+
+.project img {
+    opacity: .75;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left top;
+}
+
