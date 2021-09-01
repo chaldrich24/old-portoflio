@@ -14,26 +14,26 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#">About Me</a>
+                    <a href="#about">About Me</a>
                 </li>
                 <li>
-                    <a href="#">Projects</a>
+                    <a href="#projects">Projects</a>
                 </li>
                 <li>
-                    <a href="#">Contact Me</a>
+                    <a href="#contact">Contact Me</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <!-- About Me section -->
-    <section class="about-me">
-        <div class="section-heading primary-heading">
+    <section class="about-me" id="about">
+        <div class="section-heading heading-dark-accent">
             <h2>About Me</h2>
         </div>
 
         <div class="about-info">
-            <img src="./Assets/Images/image1.jpeg" alt="Picture of me" />
+            <img src="./Assets/Images/myself.JPG" alt="Picture of me" />
             
             <div>
                 <p>Etiam sollicitudin vel erat ut finibus. Suspendisse potenti. Pellentesque et scelerisque orci. Suspendisse pharetra lorem venenatis sem finibus convallis. Duis porttitor imperdiet mauris a ullamcorper. 
@@ -44,42 +44,65 @@
     </section>
 
     <!-- Projects section -->
-    <section class="project-section">
-        <div class="section-heading secondary-heading">
+    <section class="project-section" id="projects">
+        <div class="section-heading heading-white-dark">
             <h2>Projects</h2>
         </div>
 
         <div class="projects">
-            <div class="main-project">
-                <img src="./Assets/Images/run-buddy.png" />
-                <h3>Main Project</h3>
-            </div>
+            <a class="main-anchor" href="https://www.google.com">
+                <div class="main-project">
+                    <img src="./Assets/Images/run-buddy.png" />
+                    <h3>Main Project</h3>
+                </div>
+            </a>
 
-            <div class="project">
-                <img src="./Assets/Images/horiseon.png" />
-                <h3> Project 1</h3>
-            </div>
+            <a class="secondary-anchor">
+                <div class="project">
+                    <img src="./Assets/Images/horiseon.png" />
+                    <h3> Project 1</h3>
+                </div>
+            </a>
 
-            <div class="project">
-                <img src="./Assets/Images/javascript-project.jpeg" />
-                <h3> Project 2</h3>
-            </div>
+            <a class="secondary-anchor"> 
+                <div class="project">
+                    <img src="./Assets/Images/javascript-project.jpeg" />
+                    <h3> Project 2</h3>
+                </div>
+            </a>
+            
+            <a class="secondary-anchor">
+                <div class="project">
+                    <img src="./Assets/Images/horiseon.png" />
+                    <h3> Project 1</h3>
+                </div>
+            </a>
+            
+            <a class="secondary-anchor"> 
+                <div class="project">
+                    <img src="./Assets/Images/javascript-project.jpeg" />
+                    <h3> Project 2</h3>
+                </div>
+            </a>
         </div>
     </section>
 
      <!-- Contact Me section -->
-    <footer>
-        <div class="section-heading">
+    <footer id="contact">
+        <div class="section-heading heading-white-accent">
             <h2>Contact Me</h2>
         </div>
 
         <div class="contact-info">
-            <p>Email: jackbauer@hotmail.com</p>
-            <p>Phone: +1 555 - 178</p>
+            <p><span>Email:</span> <br />
+                jackbauer@hotmail.com</p>
+            <p><span>Github:</span> <br />
+                https://github.com/chaldrich24</p>
+            <p><span>Phone:</span> <br /> 
+                +1 555 - 0178</p>
             <address>
-                671 Lincoln Ave
-                Winnetka, IL
-                60093
+                671 Lincoln Ave <br />
+                Winnetka, IL 60093
             </address>
         </div>
     </footer>

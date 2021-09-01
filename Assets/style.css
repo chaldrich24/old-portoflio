@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #4a4a4a;
-    --secondary-color: #fa4b6e;
-    --tertiary-color: #fff;
+    --dark-color: #4a4a4a;
+    --accent-color: #380382;
+    --white-color: #fff;
 }
 
 * {
@@ -15,8 +15,8 @@ body {
 }
 
 header {
-    background-color: var(--primary-color);
-    color: var(--tertiary-color);
+    background-color: var(--accent-color);
+    color: var(--white-color);
     padding: 20px 30px;
     display: flex;
     justify-content: space-between;
@@ -39,9 +39,14 @@ header nav ul {
 
 header a {
     text-decoration: none;
-    color: var(--tertiary-color);
-    font-size: 20px;
-    padding: 5px 15px;
+    color: var(--white-color);
+    font-size: 15px;
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+
+header a:hover {
+    border-bottom: 2px solid var(--dark-color);
 }
 
 section {
@@ -52,26 +57,33 @@ section {
     flex-wrap: wrap;
 }
 
-.section-heading {
-    text-align: center;
+.heading-dark-accent {
+    color: var(--dark-color);
+    border-right: 9px solid var(--accent-color);
+    padding: 60px 10px 60px 0;
 }
 
-.primary-heading {
-    color: var(--secondary-color);
+.heading-white-dark {
+    color: var(--white-color);
+    border-right: 9px solid var(--dark-color);
+    padding: 60px 10px 60px 0;
 }
 
-.secondary-heading {
-    color: var(--tertiary-color);
+.heading-white-accent {
+    color: var(--white-color);
+    border-right: 9px solid var(--accent-color);
+    padding: 20px 20px 20px 0;
 }
 
-.section-heading h2 {
+.heading-dark-accent h2, .heading-white-accent h2, .heading-white-dark h2{
     font-size: 35px;
 }
 
 .about-info {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 75%;
 }
 
@@ -81,28 +93,39 @@ section {
 }
 
 .about-info img {
-    width: 200px;
-    height: 300px;
-    border: 5px solid var(--secondary-color);
+    width: 500px;
+    height: auto;
+    border: 2px solid var(--dark-color);
+    margin-bottom: 25px;
 }  
 
 .project-section {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
 }
 
 .projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 75%;
+}
+
+.projects h3 {
+    display: inline-block;
+    position: absolute;
+    color: var(--white-color);
+    left: 3px;
+    bottom: 10px;
+    background-color: var(--dark-color);
+    padding: 5px 7px 15px 53px;
 }
 
 .main-project {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    border: 5px solid var(--primary-color);
+    border: 5px solid var(--dark-color);
     position: relative;
     width: 100%;
 }
@@ -113,42 +136,48 @@ section {
     opacity: .75;
 }
 
-.projects h3 {
-    display: inline-block;
-    position: absolute;
-    color: var(--tertiary-color);
-    left: 3px;
-    bottom: 10px;
-    background-color: var(--primary-color);
-    padding: 5px 7px 15px 53px;
-    border: 3px inset var(--secondary-color);
+.secondary-anchor { 
+    flex: 0 49.5%;
+    height: 200px;
 }
 
 .project {
-    flex: 0 50%;
-    border: 5px solid var(--primary-color);
+    border: 5px solid var(--dark-color);
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    width: 50px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     position: relative;
+    margin-top: 7px;
 }
 
 .project img {
-    opacity: .75;
+    opacity: .65;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: left top;
 }
 
+.main-project:hover, .project:hover {
+    border: 5px solid var(--white-color);
+}
+
+.main-project:hover img, .project:hover img {
+    opacity: 1;
+}
+
+.main-project:hover h3, .project:hover h3 {
+    text-decoration: underline;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: var(--primary-color);
-    color: var(--tertiary-color);
+    background-color: var(--dark-color);
+    color: var(--white-color);
     padding: 20px 30px;
 }
 
@@ -157,6 +186,16 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    width: 70%;
+    flex-basis: 80%;
 }
+
+.contact-info span {
+    font-weight: bold;
+}
+
+.contact-info p, .contact-info address {
+    margin: 5px 5px;
+    flex-basis: 20%;
+}
+
 
