@@ -104,6 +104,7 @@ section {
     justify-content: center;
     border: 5px solid var(--primary-color);
     position: relative;
+    width: 100%;
 }
 
 .main-project img {
@@ -115,8 +116,12 @@ section {
 .projects h3 {
     display: inline-block;
     position: absolute;
-    color: var(--primary-color);
-    left: 0;
+    color: var(--tertiary-color);
+    left: 3px;
+    bottom: 10px;
+    background-color: var(--primary-color);
+    padding: 5px 7px 15px 53px;
+    border: 3px inset var(--secondary-color);
 }
 
 .project {
@@ -125,7 +130,7 @@ section {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    width: 100px;
+    width: 50px;
     height: 200px;
     position: relative;
 }
@@ -136,5 +141,22 @@ section {
     height: 100%;
     object-fit: cover;
     object-position: left top;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    padding: 20px 30px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 70%;
 }
 
