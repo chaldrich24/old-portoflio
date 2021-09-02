@@ -274,6 +274,23 @@ footer {
 }
 
 @media screen and (max-width: 575px) {
+    section {
+        padding: 10px;
+    }
+
+    header {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    header a {
+        font-size: 13px;
+    }
+
     .about-info img {
         width: 300px;
     }
@@ -290,7 +307,22 @@ footer {
         bottom: 0px;
     }
 
+    .secondary-anchor { 
+        height: 100px;
+    }
+
     .contact-info p, .contact-info address {
         font-size: 15px;
+        flex: 0 70%;
+        margin-top: 13px;
+    }
+
+    footer {
+        padding: 20px 150px;
+    }
+
+    .contact-info {
+        justify-content: flex-start;
     }
 }
+/* CHANGE IPHONE STYLING ABOVE */
