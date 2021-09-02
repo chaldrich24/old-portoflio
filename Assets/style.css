@@ -311,18 +311,19 @@ footer {
         height: 100px;
     }
 
-    .contact-info p, .contact-info address {
-        font-size: 15px;
-        flex: 0 70%;
-        margin-top: 13px;
-    }
-
     footer {
         padding: 20px 150px;
     }
 
     .contact-info {
         justify-content: flex-start;
+    }
+
+    .contact-info p, .contact-info address {
+        font-size: 15px;
+        flex: 0 70%;
+        margin-top: 13px;
+        text-decoration: none;
     }
 }
 /* CHANGE IPHONE STYLING ABOVE */
