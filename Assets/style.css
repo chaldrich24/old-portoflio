@@ -275,7 +275,7 @@ footer {
 
 @media screen and (max-width: 575px) {
     section {
-        padding: 10px;
+        padding: 50px 10px;
     }
 
     header {
@@ -323,7 +323,7 @@ footer {
         font-size: 15px;
         flex: 0 70%;
         margin-top: 13px;
-        text-decoration: none;
+        text-decoration: noneg;
     }
 }
 /* CHANGE IPHONE STYLING ABOVE */
