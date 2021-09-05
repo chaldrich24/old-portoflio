@@ -99,6 +99,10 @@ section {
     margin-bottom: 25px;
 }  
 
+.about-me {
+    text-align: justify;
+}
+
 .project-section {
     background-color: var(--accent-color);
 }
@@ -205,6 +209,14 @@ footer {
 }
 
 @media screen and (max-width: 1013px) {
+    section {
+        padding: 80px 110px;
+    }
+
+    .section-heading {
+        margin: 0 15px;
+    }
+
     .about-me {
         justify-content: center;
     }
@@ -221,7 +233,7 @@ footer {
     }
 
     .about-me p {
-        text-align: center;
+        text-align: justify;
     }
 
     .about-info div {
@@ -323,7 +335,6 @@ footer {
         font-size: 15px;
         flex: 0 70%;
         margin-top: 13px;
-        text-decoration: noneg;
+        text-decoration: none;
     }
 }
-/* CHANGE IPHONE STYLING ABOVE */
